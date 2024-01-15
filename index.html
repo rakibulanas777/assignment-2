@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
     <title>Gayen Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Sofia+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logo">
+        <img src="./Images/Group 40071 (2).png" alt="" class="logo-img" />
+        <label class="logo-text">Gayen <span class="color">Travel</span></label>
+      </div>
+
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section>
+      <!-- banner part start  -->
+      <div class="header-banner">
+        <div class="header-banner--text">
+          <div class="header-banner--title">Explore Your Travel</div>
+          <div class="header-banner--details">
+            Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
+            adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+          </div>
+          <div class="header-bottom">
+            <div class="header-bottom-grid">
+              <div class="input-box">
+                <input
+                  type="text"
+                  placeholder="Where go"
+                  class="input"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="input-box">
+                <input type="date" name="" class="input" id="" />
+              </div>
+              <div class="input-box">
+                <select name="Select Type" class="input" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <button class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Find Now</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner part end -->
+    </section>
   </body>
+  <script
+    src="https://kit.fontawesome.com/c1f9146041.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
