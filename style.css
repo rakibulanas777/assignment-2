@@ -119,6 +119,7 @@ input:focus {
   border: none;
   color: white;
   outline: none;
+  padding: 10px 16px;
   cursor: pointer;
 }
 .header-banner--text {
@@ -446,7 +447,7 @@ figure.snip1157 .author h5 span {
 .newsletter {
   padding: 60px 30px;
 }
-.signin {
+.news {
   width: 400px;
   background: #ffffff;
   z-index: 1000;
@@ -458,7 +459,7 @@ figure.snip1157 .author h5 span {
   border-radius: 16px;
   border: 1px solid #ff5400;
 }
-section .signin .content {
+section .news .content {
   position: relative;
   width: 100%;
   display: flex;
@@ -467,7 +468,7 @@ section .signin .content {
   flex-direction: column;
   gap: 20px;
 }
-section .signin .content h2 {
+section .news .content h2 {
   color: #131318;
   font-family: Mulish;
   font-size: 24px;
@@ -478,6 +479,8 @@ section .signin .content h2 {
 .newsletter {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 60px 30px;
 }
 .newsletter-description {
   color: #5a5a5d;
@@ -487,17 +490,17 @@ section .signin .content h2 {
   font-weight: 400;
   line-height: 26px; /* 162.5% */
 }
-section .signin .content .form {
+.content .form {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-section .signin .content .form .inputBox {
+.content .form .inputBox {
   position: relative;
   width: 100%;
 }
-section .signin .content .form .inputBox input {
+.content .form .inputBox input {
   position: relative;
   width: 100%;
   border-radius: 8px;
@@ -510,7 +513,7 @@ section .signin .content .form .inputBox input {
   font-weight: 500;
   font-size: 1em;
 }
-section .signin .content .form .inputBox i {
+.content .form .inputBox i {
   position: absolute;
   left: 0;
   padding: 15px 10px;
@@ -519,24 +522,24 @@ section .signin .content .form .inputBox i {
   transition: 0.5s;
   pointer-events: none;
 }
-.signin .content .form .inputBox input:focus ~ i,
-.signin .content .form .inputBox input:valid ~ i {
+.form .inputBox input:focus ~ i,
+.form .inputBox input:valid ~ i {
   transform: translateY(-7.5px);
   font-size: 0.8em;
   color: #fff;
 }
-.signin .content .form .links {
+.content .form .links {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.signin .content .form .links a {
+.content .form .links a {
   color: #fff;
   text-decoration: none;
 }
 
-.signin .content .form .inputBox input[type="submit"] {
+.content .form .inputBox input[type="submit"] {
   padding: 10px;
   background: #ff5400;
   color: #ffffff;
@@ -661,5 +664,66 @@ input[type="submit"]:active {
   }
   #check:checked ~ ul {
     left: 0;
+  }
+  .header-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .header-banner--title {
+    font-size: 40px;
+  }
+  .header-banner {
+    height: 120vh;
+  }
+  .popular {
+    grid-template-columns: 1fr;
+  }
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7 {
+    grid-column: 1;
+    cursor: pointer;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .why-us {
+    padding: 60px 30px;
+  }
+  .popular-img {
+    height: 100%;
+    width: 100%;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    grid-column: 1;
+  }
+  .testimonial-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  .snip1157 {
+    margin: 0 auto;
+  }
+  .newsletter {
+    grid-template-columns: 1fr;
+    padding: 60px 30px;
+  }
+  .red-box {
+    display: none;
+  }
+  .news {
+    width: auto;
+  }
+  .newsletter-right {
+    position: static;
+    margin: 0 auto;
   }
 }
